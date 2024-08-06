@@ -1,0 +1,9 @@
+<div>
+  <h1>{{ title }}</h1>
+  <input type="file" (change)="onFileChange($event)" />
+  <pre>{{ json }}</pre>
+
+  <div *ngFor="let vm of viewModels">
+    <pre>{{ vm | json }}</pre>
+  </div>
+</div>
